@@ -3,17 +3,9 @@ package com.stackroute;
 
 import com.stackroute.domain.Config;
 import com.stackroute.domain.Movie;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.support.BeanDefinitionReader;
-import org.springframework.beans.factory.support.BeanDefinitionRegistry;
-import org.springframework.beans.factory.support.DefaultListableBeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
+
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotatedBeanDefinitionReader;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.GenericApplicationContext;
-import org.springframework.core.io.ClassPathResource;
 
 
 public class Main {
@@ -24,14 +16,5 @@ public class Main {
         movie1.display();
         Movie movie2 = context.getBean("getMovie2", Movie.class);       //Creating bean movie2
         movie2.display();
-        Movie movie3 = context.getBean("getMovie3", Movie.class);       //Creating bean movie3
-        movie3.display();
-        System.out.println(movie1==movie2);     //Comparing two beans
-        Movie movie4 = context.getBean("getMovie4", Movie.class);       //Creating bean movie4
-        movie4.display();
-        Movie movie5 = context.getBean("getMovie5", Movie.class);       //Creating bean movie5
-        movie5.display();
-        System.out.println(movie4==movie5);         //Comparing Two beans
-
     }
 }

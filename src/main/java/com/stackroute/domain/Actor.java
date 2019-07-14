@@ -1,6 +1,6 @@
 package com.stackroute.domain;
 
-import org.springframework.beans.factory.annotation.Value;
+
 
 public class Actor {
     public Actor(String name, String gender, int age) {
