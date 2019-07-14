@@ -10,6 +10,7 @@ public class Actor {
         this.gender = gender;
         this.age = age;
     }
+
     public void setName(String name) {
         this.name = name;
     }

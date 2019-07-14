@@ -9,6 +9,7 @@ public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean {
     public void destroy() throws Exception {
         System.out.println("Calls destroy");
     }
+
     @Override
     public void afterPropertiesSet() throws Exception {
 
