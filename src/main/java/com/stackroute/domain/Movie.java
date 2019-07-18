@@ -9,7 +9,8 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Scope;
 
 @Scope("prototype")
-public class Movie implements ApplicationContextAware, BeanNameAware, BeanFactoryAware {
+public class Movie implements ApplicationContextAware, BeanNameAware, BeanFactoryAware {    //Implements ApplicationContextAware,BeanNameAware
+                                                                                        //BeanFactoryAware
     public Movie(Actor actor)
     {
         this.actor = actor;
