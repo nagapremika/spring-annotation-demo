@@ -2,7 +2,7 @@ package com.stackroute.domain;
 
 import org.springframework.context.annotation.Scope;
 
-@Scope("prototype")
+@Scope("prototype")     //Scope is prototype
 public class Movie  {
     public Movie(Actor actor)
     {
