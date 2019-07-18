@@ -3,7 +3,7 @@ package com.stackroute.domain;
 
 
 public class Actor {
-    public Actor(String name, String gender, int age) {
+    public Actor(String name, String gender, int age) {     //Constructor
         this.name = name;
         this.gender = gender;
         this.age = age;
@@ -14,7 +14,7 @@ public class Actor {
     }
 
 
-    public void setGender(String gender) {
+    public void setGender(String gender) {      //gender setter
         this.gender = gender;
     }
 
