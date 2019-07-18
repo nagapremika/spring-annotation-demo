@@ -3,7 +3,7 @@ package com.stackroute.domain;
 import org.springframework.beans.factory.annotation.Value;
 
 public class Actor {
-    public Actor(String name, String gender, int age) {
+    public Actor(String name, String gender, int age) {     //Actor constructor
         this.name = name;
         this.gender = gender;
         this.age = age;
